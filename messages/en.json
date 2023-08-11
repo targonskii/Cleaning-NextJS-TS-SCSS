@@ -1,0 +1,151 @@
+{
+    "Header": {
+        "menu": {
+            "services": "services",
+            "benefits": "benefits",
+            "about": "about",
+            "filter": "filter",
+            "contacts": "contacts"
+        }
+    },
+    "Carousel": {
+        "living room": "fresh, well-maintained and inviting living room",
+        "kitchen": "perfectly clean and ready-to-cook kitchen",
+        "hallway": "neat and inviting hallway",
+        "bathroom": "clean, fresh and shiny bathroom"
+    },
+    "Benefits": {
+        "level": {
+            "title": "Professionalism",
+            "content": "I have experience and skills in the field of cleaning and maintaining cleanliness. I know how to efficiently and thoroughly clean every room with attention to detail."
+        },
+        "work": {
+            "title": "High quality work",
+            "content": "I strive for the impeccable quality of my work. I use professional tools and techniques to achieve the best results."
+        },
+        "schedule": {
+            "title": "Flexible schedule",
+            "content": "I offer a flexible work schedule that can be tailored to your needs. You can choose a convenient time and day of the week for cleaning."
+        },
+        "shield": {
+            "title": "Confidentiality",
+            "content": "I respect the principle of confidentiality and respect your privacy. You can be sure that your personal belongings will be safe and handled with the utmost care and respect."
+        }
+    },
+    "About": {
+        "title": "About Me",
+        "content": "My main responsibility is to ensure that the rooms or apartments are clean and cozy. This means that my duties include cleaning of rooms, wiping surfaces and windows, and stocking all necessary items. I interact with customers politely and friendly, always ready to assist with any questions. In addition, I check the functionality of all equipment."
+    },
+    "Filter": {
+        "title": "Filter",
+        "frequency": {
+            "title": "Frequency",
+            "oneTime": "One-time",
+            "twiceAWeek": "Twice a week",
+            "everyWeek": "Every week"
+        },
+        "allergy": {
+            "title": "Allergy",
+            "none": "None",
+            "cat": "Cat",
+            "dog": "Dog"
+        },
+        "cleaning": {
+            "title": "Cleaning",
+            "regularCleaning": "Regular cleaning",
+            "windowCleaning": "Window cleaning",
+            "afterRepairing": "After repairing",
+            "afterRelocation": "After relocation"
+        },
+        "address": {
+            "placeholder": "Address",
+            "button": "SEARCH"
+        },
+        "week": {
+            "sun": "Sun",
+            "mon": "Mon",
+            "tue": "Tue",
+            "wed": "Wed",
+            "thu": "Thu",
+            "fri": "Fri",
+            "sat": "Sat"
+        },
+        "order": "order"
+    },
+    "Faq": {
+        "faq": "FAQ",
+        "ques1": {
+            "q": "How often can you clean my home?",
+            "a": "By all standards, general cleaning is carried out at least once a week. You can clean 1 time per month according to the general format and 1 time per week according to the requirements of daily cleaning. Rooms are often cleaned at least once a day."
+        },
+        "ques2": {
+            "q": "How much do your services cost?",
+            "a": "The cost of my services depends on the area of the room/house and the frequency of cleaning."
+        },
+        "ques3": {
+            "q": "Are your cleaners reliable and trustworthy?",
+            "a": "Yes, our maids are reliable and trustworthy. They are vetted and trained to ensure they are professional and of a high standard."
+        },
+        "ques4": {
+            "q": "Can you provide cleaning supplies or do I need to provide them?",
+            "a": "We provide all the necessary cleaning supplies, but if you have any specific preferences, please let us know in advance."
+        },
+        "ques5": {
+            "q": "Can you accommodate special requests or cleaning preferences?",
+            "a": "Yes, we can accommodate special cleaning requests or preferences."
+        },
+        "ques6": {
+            "q": "How do you ensure the safety of my home during cleaning?",
+            "a": "We take all necessary precautions to keep your home safe while cleaning. I've been trained to handle your belongings with care."
+        },
+        "ques7": {
+            "q": "Do you offer any discounts or promotions for first-time clients?",
+            "a": "We take all necessary precautions to keep your home safe while cleaning. I've been trained to handle your belongings with care."
+        }
+    },
+    "Contacts": {
+        "title": "CONTACTS",
+        "messengers": {
+            "whatsapp": "WhatsApp",
+            "viber": "Viber",
+            "telegram": "Telegram"
+        }
+    },
+    "Auth": {
+        "button": {
+            "singUp": "sing up",
+            "logIn": "log in",
+            "next": "next",
+            "back": "back",
+            "send": "send",
+            "done": "done"
+        },
+        "placeholder": {
+            "firstName": "First name",
+            "lastName": "Last name",
+            "dateOfBirth": "Date of birth",
+            "email": "Email",
+            "mobilePhone": "Mobile phone",
+            "emailOrPhoneNumber": "Email or phone number",
+            "password": "Password",
+            "newPassword": "New password",
+            "repeatNewPassword": "Repeat new password",
+            "verificationCode": "Verification code",
+            "pleaseEnterEmail": "Please enter email you registered with",
+            "wrongFormat": "Wrong format"
+        },
+        "title": {
+            "singUp": "Sing Up",
+            "logIn": "Log In",
+            "verification": "Verification",
+            "forgotPassword": "Forgot password",
+            "yourPasswordWasChanged": "Your password was changed "
+        },
+        "hint": {
+            "forgotPassword": "Forgot password?",
+            "code": "Code",
+            "expirationTime": "expiration time",
+            "hasExpired": "has expired"
+        }
+    }
+}

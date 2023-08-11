@@ -1,0 +1,171 @@
+@import "../../app/[locale]/variables.scss";
+
+.filter {
+    background: $main-bg-color;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        max-width: 1920px;
+        padding: 156px 385px 258px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin-bottom: 223px;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    &__filterButtons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__address {
+        display: flex;
+        gap: 53px;
+        margin-top: 183px;
+
+        & input {
+            width: 882px;
+            padding: 21px 30px;
+            border: none;
+            border-radius: 5px;
+            background: $bg-input;
+            outline: none;
+            cursor: pointer;
+
+            &::placeholder {
+                color: rgba($black, 0.5);
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__searchButton {
+        width: 300px;
+        height: 80px;
+        border-radius: 5px;
+        border: 1px solid $black;
+        background: $bg-btn-color;
+        cursor: pointer;
+    }
+
+    &__searchButtonActive {
+        background: $bg-gold;
+    }
+
+    @media (min-width: 1201px) and (max-width: 1919px) {
+        .filter {
+            &__container {
+                padding: 156px 0 258px;
+            }
+
+            &__filterButtons {
+                justify-content: center;
+                gap: 150px;
+                padding: 0 20px;
+            }
+
+            &__address {
+                justify-content: center;
+                padding: 0 20px;
+
+                & input {
+                    max-width: 882px;
+                    border: none;
+                }
+            }
+            &__searchButton {
+                max-width: 300px;
+                border-radius: 5px;
+                border: 1px solid $black;
+                background: $bg-btn-color;
+                cursor: pointer;
+            }
+            &__searchButtonActive {
+                background: $bg-gold;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 834px) and (max-width: 1200px) {
+        .filter {
+            background: $main-bg-color;
+            &__container {
+                padding: 156px 0 258px;
+            }
+            &__title {
+                margin-bottom: 123px;
+            }
+            &__filterButtons {
+                justify-content: space-between;
+                gap: 20px;
+                padding: 0 20px;
+            }
+            &__address {
+                gap: 20px;
+                padding: 0 20px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 833px) {
+        .filter {
+            &__container {
+                padding: 46px 0px 43px;
+            }
+
+            &__title {
+                margin-bottom: 48px;
+                font-size: 11px;
+            }
+
+            &__filterButtons {
+                justify-content: space-between;
+                gap: 40px;
+                padding: 0 39px;
+            }
+
+            &__address {
+                justify-content: space-between;
+                gap: 14.36px;
+                height: 100%;
+                padding: 0 28px;
+                margin-top: 27.2px;
+
+                & input {
+                    width: 100%;
+                    height: 100%;
+                    padding: 5.69px;
+                    border: none;
+                    border-radius: 1.355px;
+                    font-size: 8px;
+                    font-style: normal;
+                    font-weight: 500;
+
+                    &::placeholder {
+                        font-size: 8px;
+                        font-style: normal;
+                        font-weight: 500;
+                    }
+                }
+            }
+            &__searchButton {
+                max-width: 82px;
+                height: 100%;
+                padding: 5.69px 22.22px;
+                border-radius: 1.355px;
+                border: 0.271px solid #000;
+                font-size: 8px;
+                background: $bg-btn-color;
+                cursor: pointer;
+            }
+            &__searchButtonActive {
+                background: $bg-gold;
+            }
+        }
+    }
+}

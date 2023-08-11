@@ -1,0 +1,81 @@
+@import "../../app/[locale]/variables.scss";
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background: $main-bg-color;
+
+    &__container {
+        max-width: 1920px;
+    }
+
+    &__image_wrapper {
+        position: relative;
+    }
+
+    &__image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__prevButton,
+    &__nextButton {
+        position: absolute;
+        top: 50%;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    &__prevButton {
+        left: 46px;
+        transform: translate(0, -50%);
+    }
+
+    &__nextButton {
+        right: 46px;
+        transform: rotate(180deg) translate(0, 50%);
+    }
+
+    &__description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 145px;
+        background: $bg-gold;
+        color: $white;
+        text-transform: uppercase;
+
+        & span {
+            font-weight: 800;
+        }
+    }
+
+    @media only screen and (max-width: 833px) {
+        &__description {
+            height: 29px;
+
+            &_text {
+                font-size: 8px;
+                font-style: normal;
+                font-weight: 400;
+            }
+        }
+
+        &__prevButton {
+            left: 9px;
+        }
+
+        &__nextButton {
+            right: 9px;
+        }
+
+        &__arrow {
+            width: 11.7px;
+            height: 11.8px;
+        }
+    }
+}

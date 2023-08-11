@@ -1,0 +1,61 @@
+@import "../../app/[locale]/variables.scss";
+
+.timeButton {
+    width: 100%;
+    padding: 13px 40px;
+    border: 1px solid $black;
+    border-radius: 5px;
+    margin-bottom: 22px;
+    background: $bg-btn-color;
+
+    &:disabled {
+        color: $bg-btn-color;
+    }
+
+    @media (max-width: 1400px) {
+        padding: 13px 30px;
+        font-size: 24px;
+    }
+
+    @media (max-width: 1070px) {
+        padding: 10px 20px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    @media only screen and (max-width: 833px) {
+        padding: 3px 8px;
+        border-radius: 1.196px;
+        border: 0.239px solid $black;
+        margin-bottom: 4.69px;
+        font-size: 8px;
+    }
+}
+
+.selected {
+    width: 100%;
+    padding: 13px 40px;
+    border: 1px solid $black;
+    border-radius: 5px;
+    margin-bottom: 22px;
+    background: $bg-gold;
+
+    @media (max-width: 1400px) {
+        padding: 13px 30px;
+        font-size: 24px;
+    }
+
+    @media (max-width: 1070px) {
+        padding: 10px 20px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    @media only screen and (max-width: 833px) {
+        padding: 3px 8px;
+        border-radius: 1.196px;
+        border: 0.239px solid $black;
+        margin-bottom: 4.69px;
+        font-size: 8px;
+    }
+}

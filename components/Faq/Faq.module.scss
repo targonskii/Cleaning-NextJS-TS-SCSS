@@ -1,0 +1,35 @@
+@import "../../app/[locale]/variables.scss";
+
+.faq {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 158px 0 165px;
+    margin: 0 auto;
+    background: $main-bg-color;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        & h2 {
+            margin-bottom: 117px;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 700;
+        }
+    }
+
+    @media only screen and (max-width: 833px) {
+        padding: 27px 0 25px;
+
+        &__container {
+            & h2 {
+                margin-bottom: 28px;
+                font-size: 10.156px;
+            }
+        }
+    }
+}

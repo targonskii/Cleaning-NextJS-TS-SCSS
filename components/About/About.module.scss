@@ -1,0 +1,43 @@
+@import "../../app/[locale]/variables.scss";
+
+.about {
+    padding: 113px 0 152px;
+    background: $bg-gold;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    & h2 {
+        margin-bottom: 47px;
+        color: $white;
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    & p {
+        padding: 0 157px;
+        color: $white;
+        font-size: 39.364px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 833px) {
+        padding: 22px 0 26px;
+
+        & h2 {
+            margin-bottom: 8px;
+            font-size: 11px;
+        }
+
+        & p {
+            padding: 0 45px;
+            font-size: 9px;
+        }
+    }
+}

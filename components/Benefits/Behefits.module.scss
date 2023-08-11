@@ -1,0 +1,30 @@
+@import "../../app/[locale]/variables.scss";
+
+.benefits {
+    background: $main-bg-color;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        gap: 65px;
+        max-width: 1920px;
+        padding: 171px 93px 97px;
+        margin: 0 auto;
+    }
+
+    @media only screen and (min-width: 834px) and (max-width: 1740px) {
+        &__container {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+
+    @media only screen and (max-width: 833px) {
+        &__container {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 32px;
+            padding: 27px 35px 32px 51px;
+        }
+    }
+}

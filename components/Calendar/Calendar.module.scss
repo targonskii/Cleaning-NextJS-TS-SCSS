@@ -1,0 +1,223 @@
+@import "../../app/[locale]/variables.scss";
+
+.calendarWrapper {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(5px);
+        z-index: 1;
+        display: none;
+    }
+
+    &.blurred::after {
+        display: block;
+    }
+}
+
+.calendar {
+    background: $main-bg-color;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1920px;
+        padding: 140px 0px 138px;
+        margin: 0 auto;
+    }
+
+    &__days_wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 31px;
+        padding: 0 20px;
+    }
+
+    &__day {
+        max-width: 180px;
+    }
+
+    &__dayOfWeek {
+        padding-bottom: 21px;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    &__dayOfMonth {
+        width: 150px;
+        border-top: 2px solid $black;
+        padding-top: 34px;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    &__timeButtons {
+        margin-top: 94px;
+    }
+
+    &__btn_submit {
+        width: 300px;
+        height: 80px;
+        border-radius: 5px;
+        border: 1px solid $black;
+        margin-top: 111px;
+        background: $bg-gold;
+        text-transform: uppercase;
+
+        &:disabled {
+            border-radius: 5px;
+            border: 1px solid $black;
+            opacity: 0.5;
+            background: $bg-btn-color;
+        }
+    }
+
+    @media (max-width: 1400px) {
+        &__container {
+            padding: 100px 0px 78px;
+        }
+
+        &__days_wrapper {
+            gap: 20px;
+        }
+
+        &__day {
+            max-width: 130px;
+        }
+
+        &__dayOfWeek {
+            padding-bottom: 21px;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        &__dayOfMonth {
+            width: 130px;
+            border-top: 2px solid $black;
+            padding-top: 34px;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        &__btn_submit {
+            width: 250px;
+            height: 60px;
+            border-radius: 5px;
+            border: 1px solid $black;
+            margin-top: 91px;
+            font-size: 26px;
+            background: $bg-gold;
+            text-transform: uppercase;
+        }
+    }
+
+    @media (max-width: 1070px) {
+        &__container {
+            padding: 40px 0px 38px;
+        }
+
+        &__days_wrapper {
+            gap: 15px;
+        }
+
+        &__day {
+            max-width: 100px;
+        }
+
+        &__dayOfWeek {
+            padding-bottom: 21px;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        &__dayOfMonth {
+            width: 100px;
+            border-top: 2px solid $black;
+            padding-top: 24px;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        &__timeButtons {
+            margin-top: 23px;
+        }
+
+        &__btn_submit {
+            width: 200px;
+            height: 50px;
+            border-radius: 5px;
+            border: 1px solid $black;
+            margin-top: 51px;
+            background: $bg-gold;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+    }
+
+    @media only screen and (max-width: 833px) {
+        &__container {
+            padding: 33.34px 16px 32px;
+        }
+
+        &__days_wrapper {
+            gap: 7px;
+            padding: 0;
+        }
+
+        &__day {
+            max-width: 100px;
+        }
+
+        &__dayOfWeek {
+            padding-bottom: 4.66px;
+            font-size: 8.375px;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        &__dayOfMonth {
+            width: 35px;
+            border-top: 1px solid $black;
+            padding-top: 8px;
+            font-size: 11.964px;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        &__timeButtons {
+            margin-top: 23px;
+            font-size: 8px;
+        }
+
+        &__btn_submit {
+            width: 71px;
+            height: 100%;
+            padding: 5.025px 19.622px;
+            border-radius: 1.196px;
+            border: 0.239px solid $black;
+            margin-top: 32px;
+            font-size: 7.179px;
+            background: $bg-gold;
+            text-transform: uppercase;
+
+            &:disabled {
+                border-radius: 1.196px;
+                border: 0.239px solid $black;
+                opacity: 0.5;
+                background: $bg-btn-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,138 @@
+@import "../../app/[locale]/variables.scss";
+
+.benefitItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 341px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 250px;
+        border: 2px solid $black;
+        border-radius: 50%;
+        background: $white;
+    }
+
+    &__image {
+        width: 120px;
+        height: 120px;
+    }
+
+    &__title {
+        margin: 50px 0 30px;
+        color: $bg-gold;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__content {
+        text-align: center;
+        line-height: normal;
+    }
+
+    @media only screen and (min-width: 1201px) and (max-width: 1740px) {
+        max-width: 475px;
+        min-width: 0;
+
+        &__wrapper {
+            width: 180px;
+            height: 180px;
+            border: 1px solid $black;
+        }
+
+        &__image {
+            width: 90px;
+            height: 90px;
+        }
+
+        &__title {
+            font-size: 26px;
+        }
+
+        &__content {
+            font-size: 20px;
+        }
+    }
+
+    @media only screen and (min-width: 801px) and (max-width: 1200px) {
+        max-width: 290px;
+        min-width: 0;
+
+        &__wrapper {
+            width: 90px;
+            height: 90px;
+            border: 1px solid $black;
+        }
+
+        &__image {
+            width: 45px;
+            height: 45px;
+        }
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__content {
+            font-size: 16px;
+        }
+    }
+
+    @media only screen and (min-width: 539px) and (max-width: 800px) {
+        max-width: 216px;
+        min-width: 0;
+
+        &__wrapper {
+            width: 90px;
+            height: 90px;
+            border: 1px solid $black;
+        }
+
+        &__image {
+            width: 45px;
+            height: 45px;
+        }
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__content {
+            font-size: 16px;
+        }
+    }
+
+    @media only screen and (max-width: 538px) {
+        width: 130px;
+        min-width: 0;
+        padding: 17px 0 16px;
+
+        &__wrapper {
+            width: 42px;
+            height: 42px;
+            border: 1px solid $black;
+        }
+
+        &__image {
+            width: 20px;
+            height: 20px;
+        }
+
+        &__title {
+            margin: 20px 0 9px;
+            color: $bg-gold;
+            font-size: 9px;
+        }
+
+        &__content {
+            font-size: 9px;
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
+}

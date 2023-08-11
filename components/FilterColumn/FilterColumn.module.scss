@@ -1,0 +1,73 @@
+@import "../../app/[locale]/variables.scss";
+
+.filterColumn {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background: $main-bg-color;
+
+    & button {
+        height: 80px;
+        border-radius: 5px;
+        border: 1px solid $black;
+        margin-top: 32px;
+        background: $bg-btn-color;
+        cursor: pointer;
+    }
+
+    & .selected {
+        background: $bg-gold;
+    }
+
+    @media only screen and (max-width: 833px) {
+        & h2 {
+            font-size: 10px;
+        }
+
+        & button {
+            height: auto;
+            padding: 5.69px 0;
+            border-radius: 1.355px;
+            border: 0.271px solid #000;
+            margin-top: 8.67px;
+            font-size: 8px;
+            line-height: normal;
+        }
+    }
+}
+
+.filterColumn__allergy {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    background: $main-bg-color;
+
+    & button {
+        height: 80px;
+        border-radius: 5px;
+        border: 1px solid $black;
+        margin-top: 32px;
+        background: $bg-btn-color;
+        cursor: pointer;
+    }
+
+    & .selected {
+        background: $bg-gold;
+    }
+
+    @media only screen and (max-width: 833px) {
+        & h2 {
+            font-size: 10px;
+        }
+
+        & button {
+            height: auto;
+            padding: 5.69px 0;
+            border-radius: 1.355px;
+            border: 0.271px solid #000;
+            margin-top: 8.67px;
+            font-size: 8px;
+            line-height: normal;
+        }
+    }
+}
